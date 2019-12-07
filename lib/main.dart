@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 Future<List<Photo>> fetchPhotos(http.Client client) async {
   final response =
-      await client.get('https://raw.githubusercontent.com/mehulagg/Images/master/walls.json');
+      await client.get('https://jsonplaceholder.typicode.com/photos');
 
   // Use the compute function to run parsePhotos in a separate isolate.
   return compute(parsePhotos, response.body);
