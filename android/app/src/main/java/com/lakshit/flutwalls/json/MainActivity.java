@@ -1,4 +1,4 @@
-package us.koller.unsplashclient;
+package com.lakshit.flutwalls.json;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
